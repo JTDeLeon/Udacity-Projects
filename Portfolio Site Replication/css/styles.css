@@ -1,0 +1,223 @@
+body{
+  display: flex;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/*                    */
+/* SIDEBAR ELEMENTS   */
+/*                    */
+
+.sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 211px;
+}
+
+.box-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  background-color: grey;
+}
+
+#box1 {
+  background-color: #02b3e4;
+  border: 1px solid #02b3e4;
+}
+
+#box2 {
+  background-color: #2d3c49;
+  border: 1px solid #2d3c49;
+}
+
+#box3 {
+  background-color: #7d97ad;
+  border: 1px solid #7d97ad;
+}
+
+h3.color-description {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: lighter;
+    color: grey;
+}
+
+/*                    */
+/* CONTAINER ELEMENTS */
+/*                    */
+
+.container {
+  width: 80%;
+  padding-right: 3%;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 200px;
+}
+
+.name {
+  font-size: 50px;
+  padding: 0px 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.title {
+  margin: 0;
+  text-align: right;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+hr {
+  border-color: #00ff00;
+}
+
+.banner {
+  margin: 20px 0px;
+  background-image: url('../img/bannerimage.jpg');
+  background-size: cover;
+  width: 100%;
+  height:500px;
+  display: flex;
+}
+
+.banner-text {
+  color: white;
+  margin: auto;
+  background-color: black;
+  padding: 10px;
+}
+
+.banner-text span {
+  color: #00ff00;
+  font-size: 30px;
+}
+
+.header {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  color: #808080b8;
+  font-weight: lighter;
+
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.proj-image {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+}
+
+#project1 {
+  background-image: url('../img/blockchain.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#project2 {
+  background-image: url('../img/blockgeeks.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#project3 {
+  background-image: url('../img/pencil.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.work-title {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.url {
+    margin-top: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: small;
+}
+
+/* Iphone Experience */
+@media screen and (max-width: 500px){
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    margin: 0;
+    order: 2;
+    justify-content: space-between;
+  }
+
+
+
+  .container {
+    width: 100%;
+  }
+
+  .name {
+    font-size: 35px;
+    margin: auto;
+  }
+
+  header {
+    flex-direction: column;
+    max-height: none;
+    margin: auto;
+    align-items: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .projects {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px){
+  .name {
+    font-size: 30px;
+    margin: auto;
+  }
+
+  .name-title {
+    margin: auto;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .header {
+    text-align: center;
+  }
+
+  .projects {
+    justify-content: center;
+  }
+
+}

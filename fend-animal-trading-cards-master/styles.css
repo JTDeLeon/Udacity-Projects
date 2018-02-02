@@ -1,0 +1,73 @@
+/* Larger Card Container */
+.tradingCard{
+  border: 1px solid grey;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 15px #0000003d;
+  background: url(pics/background_pandas.jpg);
+  padding:5px;
+}
+
+/* Naming of the card */
+.cardName {
+  text-align: center;
+  text-decoration: underline;
+  background-color: white;
+  padding:5px;
+}
+
+.aka {
+  font-style: italic;
+  color:red;
+}
+
+/* Image Styling  */
+.image{
+  border: 5px solid black;
+  display:block;
+  margin:auto;
+}
+
+/* Details Container */
+.cardDetails{
+  border: 1px solid grey;
+  margin: 20px;
+  padding:10px;
+  padding-top:0px;
+  background-color: white;
+}
+
+/* Fact Styling */
+.interestingFact{
+  font-style: italic;
+  margin:10px 0px;
+
+}
+
+#pink{
+  color:#ff96a8;
+  font-weight: bold;
+}
+
+/* List Styling */
+.listOfFacts{
+  list-style: none;
+  /* margin:10px; */
+  padding:0;
+}
+
+.factTitle{
+  margin:0;
+  padding:0;
+  font-weight: bold;
+}
+
+#endangeredText{
+  color:red;
+}
+
+/* Font Changes Throughout Card */
+p, li{
+  font-family: serif;
+  font-size:15px
+}
